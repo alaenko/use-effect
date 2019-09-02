@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function List(props) {
-  const {items, handleClick} = props;
+  const {items, handleClick, selected} = props;
 
   return (
     <ul>
-      {items.map(o => <li className="listItem" key={o.id} onClick={() => handleClick(o)}>{o.name}</li>)}
+      {items.map(o => <li className={selected ? (selected.id === o.id ? "listItem active" : "listItem") : "listItem"} key={o.id} onClick={() => handleClick(o)}>{o.name}</li>)}
     </ul>
   )
 }

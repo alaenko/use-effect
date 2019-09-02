@@ -23,6 +23,11 @@ ul {
   border-bottom: none;
 }
 
+.active {
+  color: white;
+  background-color: blue;
+}
+
 .name {
   padding-bottom: 20px;
   font-size: 20px;

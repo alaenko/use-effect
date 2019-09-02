@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <List items={items} handleClick={handleClick}/>
+      <List items={items} handleClick={handleClick} selected={selected}/>
       {selected && <Details info={selected}/>}
     </div>
   );
